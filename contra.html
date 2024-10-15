@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olvidaste la Contraseña</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(fondo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px 40px;
+            font-size: 24px;
+            
+           
+            border: 3px solid #d7bde2 ;
+            border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
+            transition: box-shadow 0.5s, transform 0.5s;
+            width: 60%;
+        } 
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            /* color:  */
+            
+
+        }
+
+        p {
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        input[type="email"] {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 50px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f4d03f ;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-size: 24px;
+            color: #333;
+
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            transition: box-shadow 0.5s, transform 0.5s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            background-color: #d5f5e3;
+            box-shadow: 0 0 20px rgba(0, 255, 234, 0.9);
+            transform: translateY(-5px);
+        }
+        .message{
+            color: #0D0D0D;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function mostrarMensaje() {
+            const mensaje = document.getElementById('mensaje');
+            mensaje.style.display = 'block'; // Mostrar el mensaje
+        }
+    </script>
+    <div class="container">
+        <center><h2>Restauracion de su contraseña</h2></center>
+
+        <center><p> Digite su correo electrónico y le enviaremos  un código para su cambio de contraseña </p></center>
+        
+        
+
+        <label for="email" class="text-mono signup-text-promp">
+            
+        <center><input type="email" id="email" name="email" required placeholder="Ingrese su correo"</center>
+
+        <div class="d-flex flex-item-center flex-column flex-sm-row">
+            <div class=" d-flex flex-item-center width-full"></div>
+        </div> 
+        
+        <center><button type="submit" onclick="mostrarMensaje()">Enviar</button></center>
+        
+
+
+    </div>
+
+</body>
+
+</html>
